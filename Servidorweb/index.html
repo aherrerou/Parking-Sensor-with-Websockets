@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<style>
+	@font-face {
+		font-family: myFirstFont;
+		src: url(sansation_light.woff);
+	}
+	body {
+		padding-top:10px;
+		font-family: myFirstFont, Verdana;
+	}
+
+	.setv:focus
+	{
+		height:210px;
+	}
+	.setv,.manual
+	{
+		height:20px;
+		overflow:hidden;
+		box-shadow: 0x 0x 0px grey;
+	    transition: box-shadow 1s, height 4s;
+	}
+	.setv:hover {
+		height:325px;
+		box-shadow: 2px 2px 27px grey;
+	}
+	.manual{
+		height:300px;
+		box-shadow: 2px 2px 27px grey;
+	}
+	input
+	{
+		overflow:hidden;
+		box-shadow: 0x 0x 0px grey;
+	    transition: box-shadow 0.3s;
+	}
+	input:focus {
+		box-shadow: 2px 2px 0px grey;
+	}
+
+</style>
+</head>
+<body style="overflow:hidden;background-color: #71ECF8">
+	<h1 style="text-align:center">PARKING ADRIAN</h1>
+	<p>Aqui puedes consultar los sensores. Para ello introduce la http://ip:puerto/controladorSD/index.html</p>
+	<div class="manual" style="padding-bottom:10px;text-align:center;width:100%;background-color:#FAFAFA">
+		<div style="padding-top:8px;height:22px;background-color:white;border-radius:5px">Manual</div>
+		<br/>
+	<p>http://ip:puerto/controladorSD/setluz=x?sonda=y</p>
+	<p>http://ip:puerto/controladorSD/setvolumen=x?sonda=y</p>
+	<p>http://ip:puerto/controladorSD/volumen?sonda=y</p>
+	<p>http://ip:puerto/controladorSD/fecha?sonda=y</p>
+	<p>http://ip:puerto/controladorSD/ultimafecha?sonda=y</p>
+	<p>http://ip:puerto/controladorSD/luz?sonda=y</p>
+	<p>http://ip:puerto/recurso.html</p>
+		<br/>
+		<br/>
+	</div>
+</body>
+</html>
